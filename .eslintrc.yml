@@ -1,0 +1,20 @@
+---
+parser: babel-eslint
+parserOptions:
+    allowImportExportEverywhere: true
+plugins:
+    - meteor
+extends:
+    - airbnb
+    - plugin:meteor/recommended
+rules:
+    no-underscore-dangle: off
+    meteor/eventmap-params:
+        - error
+        -
+            eventParamName: event
+            templateInstanceParamName: instance
+        - meteor/template-names:
+            - off
+settings:
+    import/resolver: meteor

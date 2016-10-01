@@ -3,23 +3,27 @@
 A simple kit to start experimenting with Apollo, Meteor and React.
 
 ### Includes:
-- Apollo server
-- Apollo client
-- Express
-- React
-- Accounts UI, Basic & password
-- ES6 syntax
-* check `package.json` for specific versions
 
+-   Apollo server
+-   Apollo client
+-   Express
+-   React
+-   Accounts UI, Basic & password
+-   ES6 syntax
+-   check `package.json` for specific versions
 
 ### Running it
 
-```
-meteor npm install
-meteor
-```
+    meteor npm install
+    meteor
+
+### Quickfix Windows
+
+    meteor npm install --save-dev bcrypt-nodejs
+    meteor npm uninstall --save-dev bcrypt
 
 ### Folder structure
+
     .
     ├── client                  # Client files
     │   ├── main.css            # Styles
@@ -34,11 +38,10 @@ meteor
     │   └── server.js           # Main server file initiating Apollo server
     └── package.json            # node dependencies
 
-
 ### Learn more
 
-- [`apollo` package docs](https://github.com/apollostack/meteor-integration/)
-- [Apollo Stack docs](http://docs.apollostack.com/)
+-   [`apollo` package docs](https://github.com/apollostack/meteor-integration/)
+-   [Apollo Stack docs](http://docs.apollostack.com/)
 
 ## No Auth for Graphiql
 

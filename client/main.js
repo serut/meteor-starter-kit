@@ -8,10 +8,12 @@ import { ApolloProvider } from 'react-apollo';
 
 import App from '/imports/ui/App';
 
-const client = new ApolloClient(meteorClientConfig());
+export const client = new ApolloClient(meteorClientConfig());
 
 Meteor.startup(() => {
-  render(<ApolloProvider client={client}>
-    <App />
-  </ApolloProvider>, document.getElementById('app'));
+  if (!Meteor.isTest) {
+    render(<ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>, document.getElementById('app'));
+  }
 });
