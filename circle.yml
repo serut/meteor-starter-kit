@@ -1,6 +1,8 @@
 machine:
   node:
     version: "5.2.0"
+  environment:
+    COVERAGE_VERBOSE: 1
 checkout:
   post:
     - "git submodule update --init"
