@@ -11,7 +11,7 @@
     "coverage-watch:app-unit": "meteor test --settings settings.coverage.json --driver-package practicalmeteor:mocha",
     "coverage-watch:app-full": "meteor test --full-app --settings settings.coverage.json --driver-package practicalmeteor:mocha",
     "pretest": "npm run lint",
-    "test": "meteor npm run coverage-app-unit && meteor npm run coverage-app-full",
+    "test": "meteor npm run test:app-unit && meteor npm run test:app-full",
     "test:app-unit": "spacejam test --driver-package practicalmeteor:mocha-console-runner",
     "test:app-full": "spacejam test --full-app --driver-package practicalmeteor:mocha-console-runner",
     "pretest-watch": "npm run lint",
