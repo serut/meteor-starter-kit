@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^6.1.0",
-    "bcrypt-nodejs": "0.0.3",
+    "bcrypt": "^0.8.7",
     "buffer": "^5.0.0",
     "chai": "^3.5.0",
     "codacy-coverage": "^2.0.0",
