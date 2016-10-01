@@ -1,6 +1,7 @@
 
  {
      "include": [
-         "**/Local/Temp/meteor-test-*/**"
+         "**/Local/Temp/meteor-test-*/**",
+         "**/local/build/programs/server/app/app.js"
       ]
  }
